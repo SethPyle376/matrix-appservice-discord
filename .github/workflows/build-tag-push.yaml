@@ -42,6 +42,5 @@ jobs:
           tags: |
             sethpyle/matrix-appservice-discord:latest
             sethpyle/matrix-appservice-discord:1.0.0
-          # build on feature branches, push only on master branch
-          push: ${{ github.ref == 'refs/heads/master' }}
+          push: ${{ github.ref == 'refs/heads/develop' }}
           platforms: linux/amd64, linux/arm64
